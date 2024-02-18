@@ -1,0 +1,51 @@
+/*-----------------------------------------------MAIN PARA REGISTRARSE----------------------------------------*/
+.container_registro{
+    margin-top: 150px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .container-registro{
+    background-image: url(../image/Registro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    gap: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    margin:auto;
+  }
+  .btn-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .btn-registro h3{
+    color: $secundarybrowm;
+    font-size: 22px;
+    border-radius: 20px;
+    border: 2px solid $secundarybrowm;
+    padding: 5px 15px;
+    width: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: grey;
+  }
+  .btn-registro h3:hover{
+    background-color: $primarygreen;
+  }
+  .btn-registro a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+  }
+  .caja_form{
+    background-color: rgb(168, 163, 163);
+    padding: 20px;
+    border-radius: 20px;
+    opacity: .8;
+  }

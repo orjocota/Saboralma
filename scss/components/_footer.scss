@@ -1,0 +1,86 @@
+footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: $primarygreen;
+    padding: 50px;
+    width: 100%;
+    border-top: 3px solid $secundarybrowm;
+  }
+  .footer-link{
+    width: 100%;
+    padding: 0 15px;
+  }
+  .footer-link h4{
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-weight: 900;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: $secundarybrowm;
+  }
+  .footer-link ul li a{
+    font-size: 18px;
+    color: $secundarybrowm;
+    display: block;
+    margin-bottom: 15px;
+    transition: all 0.3 ease;
+  }
+  .footer-link ul{
+    padding-left: 0;
+  }
+  .footer-link ul li a:hover{
+    color: white;
+    padding-left: 6px;
+  }
+  .social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+  }
+  .social-link a:hover{
+    background-color: $secundarybrowm;
+  }
+  .cont-copy{
+    width: 100%;
+    margin: 0 auto;
+    background-color: $secundarybrowm;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .copy img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $secundarybrowm;
+    margin: 0;
+  }
+  .copy h4{
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 0;
+  }
+  .copy p{
+    align-items: center;
+    font-size: 14px;
+    color: whitesmoke;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+  }

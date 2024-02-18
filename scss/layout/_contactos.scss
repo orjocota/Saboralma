@@ -1,0 +1,116 @@
+/*------------------------------------------------MAIN PARA CONTACTOS-------------------------------------------*/
+.container-contactos{
+    margin-top: 150px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .container_contactos{
+    background-image: url(../image/Background-contactos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.8);
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+    gap: 80px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  .caja_p_logo h2{
+    color: $secundarybrowm;
+    font-size: 40px;
+    border-bottom:3px solid whitesmoke;
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+  .caja_p_logo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .caja_p_logo p{
+    color: $secundarybrowm;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: justify;
+    padding: 15px;
+  }
+  .caja_p_logo img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 35px;
+  }
+  form{
+    width: 50%;
+    padding: 35px auto;
+  }
+  .form-input{
+    width: 90%;
+    height: 35px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    background-color: bisque;
+    outline: none;
+  }
+  .form-label{
+    color: $secundarybrowm;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  .textarea{
+    resize: none;
+    width: 90%;
+    height: 80px;
+    margin-bottom:15px;
+    border-radius: 15px;
+    background-color: bisque;
+    outline: none;
+    padding: 10px;
+  }
+  .prive{
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $secundarybrowm;
+    font-weight: 900;
+    background-color: bisque;
+    border-radius: 20px;
+    padding: 5px;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .inframe{
+  width: 70%;
+  margin: auto;
+  }
+  .inframe h3{
+    text-align: center;
+    color: $secundarybrowm;
+    font-size: 45px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+  }
+  form button{
+    background-color: $colorbackcard;
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+  form button:hover{
+    border: 2px solid white;
+    background-color: $primarygreen;
+  }
+  form button a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+  }

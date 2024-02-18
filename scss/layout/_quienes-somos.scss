@@ -1,0 +1,44 @@
+/*--------------------------------------------- MAIN PARA QUIENES SOMOS--------------------------*/
+.container_caja_somos{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    width: 100%;
+  }
+  .caja_art_somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+    background-color: rgb(143, 142, 142);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .caja_somos{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .caja_somos img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    border: 2px solid whitesmoke;
+  } 
+  .caja_art_somos h2{
+    color: $secundarybrowm;
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    width: 100%;
+  
+  }
+  .caja_art_somos p{
+    text-align: justify;
+    color: rgb(227, 219, 219);
+  }
+  .mision{
+    text-align: end;
+    margin-right: 30px;
+  }

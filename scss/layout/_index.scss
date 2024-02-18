@@ -1,0 +1,233 @@
+/*-------------------------CARRUSEL---------------*/
+.container_carrusel {
+  margin: 100px auto;
+  width: 90%;
+  .d-item {
+    height: 600px;
+  }
+  .d-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+    border-radius: 10px;
+  }
+}
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 0;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  p {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+  }
+  button {
+    background-color: $primarygreen;
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 15px;
+
+    &:hover {
+      border: 2px solid white;
+      background-color: $colorbackcard;
+    }
+  }
+}
+/*-------------------------------SABIAS QUE??------------------------------*/
+.container_sabias {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container-sabias {
+    width: 70%;
+
+    .art-sabias {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+      background-color: $colorbackcard;
+      padding: 0 20px;
+      border-radius: 15px;
+
+      h2 {
+        color: whitesmoke;
+        font-weight: 900;
+        font-size: 40px;
+        margin-top: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        color: bisque;
+        text-align: justify;
+      }
+    }
+  }
+}
+/*-----------------------------CREACION DE IMAGEN PUBLICIDAD PARA RECETAS----------*/
+.container_grid {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titulo-receta h3 {
+  color: $secundarybrowm;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+  width: 80%;
+  border: 2px solid $secundarybrowm;
+  border-radius: 50px;
+  background-color: rgb(143, 142, 142);
+}
+.art-receta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+  margin: 50px auto;
+  h2 {
+    color: $secundarybrowm;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  img {
+    width: 70%;
+    height: 180px;
+    border-radius: 10px;
+  }
+  button {
+    background-color: $primarygreen;
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 15px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      border: 2px solid white;
+      background-color: $colorbackcard;
+    }
+  }
+}
+/*--------------------------- CREACION DE CARD PARA FUNDADORES--------------------------*/
+.container_rostros {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titulo-rostros h3{
+  color: $secundarybrowm;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid whitesmoke;
+}
+.container-rostro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 20px;
+  width: 45%;
+}
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card-caja {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background-color: $colorbackcard;
+  border: 2px solid $secundarybrowm;
+  border-radius: 20px;
+
+  img {
+    width: 100%;
+    object-fit: fill;
+  }
+
+  h5 {
+    font-size: 22px;
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: justify;
+    color: bisque;
+    font-weight: 500;
+    text-align: justify;
+  }
+
+  button {
+    background-color: $colorbackcard;
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-bottom: 30px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      border: 2px solid white;
+      background-color: $primarygreen;
+    }
+  }
+}

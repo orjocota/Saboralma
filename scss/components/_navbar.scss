@@ -1,0 +1,71 @@
+.navbar {
+  background-color: $primarygreen;
+  height: 60px;
+  margin: 20px;
+  border-radius: 15px;
+  width: 97%;
+  margin: 20px auto;
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid $secundarybrowm;
+  }
+  .letra-logo {
+    color: $secundarybrowm;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 28px;
+    transition: 0.5s color;
+  }
+  .offcanvas {
+    background-color: $primarygreen;
+    margin: 20px;
+    border-radius: 15px;
+  }
+
+  .letra-logo:hover {
+    color: whitesmoke;
+  }
+}
+
+.bi-whatsapp,
+.bi-instagram {
+  width: 30px;
+  height: 25px;
+  color: $secundarybrowm;
+  font-weight: 900;
+  padding-left: 10px;
+}
+.nav-link {
+  color: $secundarybrowm;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding-left: 10px;
+  transition: 0.5s color;
+
+  &:hover{
+    color: white;
+  }
+}
+
+.indice {
+  color: whitesmoke;
+  background-color: $colorbackcard;
+  border-radius: 15px;
+  border: none;
+}
+.navbar-toggler {
+  border: none;
+  font-size: 25px;
+}
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+.hover-a:hover {
+  color: whitesmoke;
+}

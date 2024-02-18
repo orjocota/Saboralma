@@ -1,0 +1,17 @@
+/*base*/
+@import "base/reset";
+@import "base/vars";
+/*components*/
+@import "components/navbar";
+@import "components/footer";
+/*layaout*/
+@import "layout/index";
+@import "layout/quienes-somos";
+@import "layout/productos";
+@import "layout/contactos";
+@import "layout/registrate";
+@import "layout/acceso-a-tu-cuenta";
+@import "layout/mediasqueries";
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
