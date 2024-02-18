@@ -18,51 +18,75 @@
     border-radius: 20px;
     margin-bottom: 30px;
   }
-  .caja_p_logo h2{
-    color: $secundarybrowm;
-    font-size: 40px;
-    border-bottom:3px solid whitesmoke;
-    margin-bottom: 30px;
-    margin-top: 15px;
-  }
   .caja_p_logo{
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .caja_p_logo p{
-    color: $secundarybrowm;
-    font-size: 18px;
-    font-weight: 900;
-    text-align: justify;
-    padding: 15px;
-  }
-  .caja_p_logo img{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin-top: 35px;
+
+    h2{
+      color: $secundarybrowm;
+      font-size: 40px;
+      border-bottom:3px solid whitesmoke;
+      margin-bottom: 30px;
+      margin-top: 15px;
+    }
+
+    p{
+      color: $secundarybrowm;
+      font-size: 18px;
+      font-weight: 900;
+      text-align: justify;
+      padding: 15px;
+    }
+
+    img{
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      margin-top: 35px;
+    }
   }
   form{
     width: 50%;
     padding: 35px auto;
-  }
-  .form-input{
-    width: 90%;
-    height: 35px;
-    margin-bottom: 15px;
-    border-radius: 15px;
-    border: none;
-    padding: 10px;
-    background-color: bisque;
-    outline: none;
-  }
-  .form-label{
-    color: $secundarybrowm;
-    font-size: 15px;
-    font-weight: 900;
-    text-transform: uppercase;
+
+    .form-input{
+      width: 90%;
+      height: 35px;
+      margin-bottom: 15px;
+      border-radius: 15px;
+      border: none;
+      padding: 10px;
+      background-color: bisque;
+      outline: none;
+    }
+    .form-label{
+      color: $secundarybrowm;
+      font-size: 15px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    button{
+      background-color: $colorbackcard;
+      padding: 5px 15px;
+      border: 2px solid white;
+      border-radius: 15px;
+      margin-bottom: 30px;
+
+      &:hover{
+        border: 2px solid white;
+        background-color: $primarygreen;
+      }
+
+      a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+    }
   }
   .textarea{
     resize: none;
@@ -89,28 +113,13 @@
   .inframe{
   width: 70%;
   margin: auto;
-  }
-  .inframe h3{
+
+  h3{
     text-align: center;
     color: $secundarybrowm;
     font-size: 45px;
     text-transform: capitalize;
     margin-bottom: 40px;
   }
-  form button{
-    background-color: $colorbackcard;
-    padding: 5px 15px;
-    border: 2px solid white;
-    border-radius: 15px;
-    margin-bottom: 30px;
   }
-  form button:hover{
-    border: 2px solid white;
-    background-color: $primarygreen;
-  }
-  form button a{
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    text-transform: uppercase;
-  }
+ 

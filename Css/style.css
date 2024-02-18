@@ -43,6 +43,7 @@ body {
 .navbar .letra-logo:hover {
   color: whitesmoke;
 }
+
 .bi-whatsapp,
 .bi-instagram {
   width: 30px;
@@ -51,6 +52,7 @@ body {
   font-weight: 900;
   padding-left: 10px;
 }
+
 .nav-link {
   color: #7b6519;
   font-weight: 900;
@@ -62,24 +64,29 @@ body {
 .nav-link:hover {
   color: white;
 }
+
 .indice {
   color: whitesmoke;
   background-color: #396f19;
   border-radius: 15px;
   border: none;
 }
+
 .navbar-toggler {
   border: none;
   font-size: 25px;
 }
+
 .navbar-toggler:focus,
 .btn-close:focus {
   box-shadow: none;
   outline: none;
 }
+
 .hover-a:hover {
   color: whitesmoke;
 }
+
 footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -88,6 +95,17 @@ footer {
   width: 100%;
   border-top: 3px solid #7b6519;
 }
+@media screen and (max-width: 768px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .footer-link {
   width: 100%;
   padding: 0 15px;
@@ -102,20 +120,35 @@ footer {
   text-transform: uppercase;
   color: #7b6519;
 }
-.footer-link ul li a {
+.footer-link ul {
   font-size: 18px;
   color: #7b6519;
   display: block;
   margin-bottom: 15px;
   transition: all 0.3 ease;
 }
-.footer-link ul {
-  padding-left: 0;
+.footer-link li {
+  font-size: 18px;
+  color: #7b6519;
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3 ease;
 }
-.footer-link ul li a:hover {
+.footer-link a {
+  font-size: 18px;
+  color: #7b6519;
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3 ease;
+}
+.footer-link a:hover {
   color: white;
   padding-left: 6px;
 }
+.footer-link ul {
+  padding-left: 0;
+}
+
 .social-link a {
   display: inline-block;
   min-height: 40px;
@@ -131,6 +164,7 @@ footer {
 .social-link a:hover {
   background-color: #7b6519;
 }
+
 .cont-copy {
   width: 100%;
   margin: 0 auto;
@@ -139,11 +173,22 @@ footer {
   align-items: center;
   justify-items: center;
 }
+
 .copy {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+@media screen and (max-width: 576px) {
+  .copy {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .copy {
+    flex-direction: column;
+  }
 }
 .copy img {
   width: 40px;
@@ -182,6 +227,7 @@ footer {
   filter: brightness(0.4);
   border-radius: 10px;
 }
+
 .carousel-caption {
   display: flex;
   flex-direction: column;
@@ -201,10 +247,20 @@ footer {
   text-transform: capitalize;
   margin: 0;
 }
+@media screen and (max-width: 576px) {
+  .carousel-caption h2 {
+    font-size: 35px;
+  }
+}
 .carousel-caption p {
   font-size: 30px;
   font-weight: 500;
   margin: 0;
+}
+@media screen and (max-width: 576px) {
+  .carousel-caption p {
+    font-size: 20px;
+  }
 }
 .carousel-caption button {
   background-color: #6eb744;
@@ -216,6 +272,7 @@ footer {
   border: 2px solid white;
   background-color: #396f19;
 }
+
 /*-------------------------------SABIAS QUE??------------------------------*/
 .container_sabias {
   width: 100%;
@@ -248,6 +305,7 @@ footer {
   color: bisque;
   text-align: justify;
 }
+
 /*-----------------------------CREACION DE IMAGEN PUBLICIDAD PARA RECETAS----------*/
 .container_grid {
   width: 100%;
@@ -257,6 +315,7 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+
 .titulo-receta h3 {
   color: #7b6519;
   font-weight: 900;
@@ -264,6 +323,13 @@ footer {
   font-size: 40px;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 576px) {
+  .titulo-receta h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
 .container-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -274,6 +340,12 @@ footer {
   border-radius: 50px;
   background-color: rgb(143, 142, 142);
 }
+@media screen and (max-width: 576px) {
+  .container-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .art-receta {
   display: flex;
   align-items: center;
@@ -282,7 +354,6 @@ footer {
   flex-direction: column;
   width: 100%;
   gap: 50px;
-  margin: 50px auto;
 }
 .art-receta h2 {
   color: #7b6519;
@@ -311,6 +382,7 @@ footer {
   border: 2px solid white;
   background-color: #396f19;
 }
+
 /*--------------------------- CREACION DE CARD PARA FUNDADORES--------------------------*/
 .container_rostros {
   width: 100%;
@@ -320,6 +392,7 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+
 .titulo-rostros h3 {
   color: #7b6519;
   font-weight: 900;
@@ -328,6 +401,7 @@ footer {
   margin-bottom: 50px;
   border-bottom: 2px solid whitesmoke;
 }
+
 .container-rostro {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -335,12 +409,20 @@ footer {
   padding: 20px;
   width: 45%;
 }
+@media screen and (max-width: 576px) {
+  .container-rostro {
+    grid-template-columns: repeat(1, 1fr);
+    width: 70%;
+  }
+}
+
 .card-img-top {
   width: 100%;
   height: 250px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+
 .card-caja {
   display: flex;
   flex-direction: column;
@@ -387,6 +469,7 @@ footer {
   border: 2px solid white;
   background-color: #6eb744;
 }
+
 /*--------------------------------------------- MAIN PARA QUIENES SOMOS--------------------------*/
 .container_caja_somos {
   margin-top: 150px;
@@ -405,20 +488,6 @@ footer {
   border-radius: 20px;
   margin-bottom: 20px;
 }
-
-.caja_somos {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.caja_somos img {
-  width: 100%;
-  height: 200px;
-  border-radius: 20px;
-  border: 2px solid whitesmoke;
-}
-
 .caja_art_somos h2 {
   color: #7b6519;
   font-size: 45px;
@@ -426,10 +495,21 @@ footer {
   margin-bottom: 20px;
   width: 100%;
 }
-
 .caja_art_somos p {
   text-align: justify;
   color: rgb(227, 219, 219);
+}
+
+.caja_somos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.caja_somos img {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  border: 2px solid whitesmoke;
 }
 
 .mision {
@@ -446,6 +526,11 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+.container_productos h1 {
+  color: #7b6519;
+  font-weight: 900;
+  border-bottom: 2px solid whitesmoke;
+}
 
 .container-product {
   display: grid;
@@ -454,12 +539,6 @@ footer {
   padding: 20px;
   width: 75%;
   margin-top: 30px;
-}
-
-.container_productos h1 {
-  color: #7b6519;
-  font-weight: 900;
-  border-bottom: 2px solid whitesmoke;
 }
 
 .card-caja h3 {
@@ -490,6 +569,12 @@ footer {
   margin-bottom: 30px;
 }
 
+.caja_p_logo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .caja_p_logo h2 {
   color: #7b6519;
   font-size: 40px;
@@ -497,14 +582,6 @@ footer {
   margin-bottom: 30px;
   margin-top: 15px;
 }
-
-.caja_p_logo {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .caja_p_logo p {
   color: #7b6519;
   font-size: 18px;
@@ -512,7 +589,6 @@ footer {
   text-align: justify;
   padding: 15px;
 }
-
 .caja_p_logo img {
   width: 250px;
   height: 250px;
@@ -524,8 +600,7 @@ form {
   width: 50%;
   padding: 35px auto;
 }
-
-.form-input {
+form .form-input {
   width: 90%;
   height: 35px;
   margin-bottom: 15px;
@@ -535,11 +610,27 @@ form {
   background-color: bisque;
   outline: none;
 }
-
-.form-label {
+form .form-label {
   color: #7b6519;
   font-size: 15px;
   font-weight: 900;
+  text-transform: uppercase;
+}
+form button {
+  background-color: #396f19;
+  padding: 5px 15px;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+form button:hover {
+  border: 2px solid white;
+  background-color: #6eb744;
+}
+form button a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
@@ -571,33 +662,12 @@ form {
   width: 70%;
   margin: auto;
 }
-
 .inframe h3 {
   text-align: center;
   color: #7b6519;
   font-size: 45px;
   text-transform: capitalize;
   margin-bottom: 40px;
-}
-
-form button {
-  background-color: #396f19;
-  padding: 5px 15px;
-  border: 2px solid white;
-  border-radius: 15px;
-  margin-bottom: 30px;
-}
-
-form button:hover {
-  border: 2px solid white;
-  background-color: #6eb744;
-}
-
-form button a {
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  text-transform: uppercase;
 }
 
 /*-----------------------------------------------MAIN PARA REGISTRARSE----------------------------------------*/
@@ -628,7 +698,6 @@ form button a {
   align-items: center;
   gap: 50px;
 }
-
 .btn-registro h3 {
   color: #7b6519;
   font-size: 22px;
@@ -640,11 +709,9 @@ form button a {
   text-transform: uppercase;
   background-color: grey;
 }
-
 .btn-registro h3:hover {
   background-color: #6eb744;
 }
-
 .btn-registro a {
   text-decoration: none;
   color: white;
@@ -681,7 +748,6 @@ form button a {
   border-radius: 20px;
   margin: auto;
 }
-
 .container-login h2 {
   color: white;
   font-size: 35px;
