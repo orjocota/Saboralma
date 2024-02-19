@@ -6,6 +6,9 @@ footer {
   width: 100%;
   border-top: 3px solid $secundarybrowm;
 
+  @include large {
+    grid-template-columns: repeat(2,1fr);
+  }
   @include medium {
     grid-template-columns: repeat(2,1fr);
   }
@@ -84,6 +87,10 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  @include large{
+    flex-direction: column;
+  }
   @include small {
     flex-direction: column;
   }

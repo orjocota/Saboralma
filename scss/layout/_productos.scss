@@ -20,6 +20,25 @@
     padding: 20px;
     width: 75%;
     margin-top: 30px;
+
+    @include extralarge{
+      grid-template-columns: repeat(2,1fr);
+      width: 70%;
+    }
+
+    @include large{
+      grid-template-columns: repeat(2,1fr);
+      width: 80%;
+    }
+
+    @include medium{
+      grid-template-columns: repeat(1,1fr);
+      width: 70%;
+    }
+
+    @include small{
+      width: 80%;
+    }
   }
   .card-caja h3{
     color: whitesmoke;

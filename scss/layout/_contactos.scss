@@ -17,12 +17,33 @@
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 30px;
+
+    @include large{
+      flex-direction: column;
+    }
+    @include medium{
+      flex-direction: column;
+    }
+    @include small{
+      flex-direction: column;
+    }
   }
   .caja_p_logo{
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include large{
+      width: 100%;
+    }
+    @include medium{
+      width: 100%;
+    }
+
+    @include small{
+      width: 100%;
+    }
 
     h2{
       color: $secundarybrowm;
@@ -51,6 +72,18 @@
     width: 50%;
     padding: 35px auto;
 
+    @include large{
+      width: 100%;
+    }
+
+    @include medium{
+      width: 100%;
+    }
+
+    @include small{
+      width: 100%;
+    }
+
     .form-input{
       width: 90%;
       height: 35px;
@@ -60,6 +93,16 @@
       padding: 10px;
       background-color: bisque;
       outline: none;
+
+      @include large{
+        width: 100%;
+      }
+      @include medium{
+        width: 100%;
+      }
+      @include small{
+        width: 100%;
+      }
     }
     .form-label{
       color: $secundarybrowm;
@@ -97,6 +140,16 @@
     background-color: bisque;
     outline: none;
     padding: 10px;
+
+    @include large{
+      width: 100%;
+    }
+    @include medium{
+      width: 100%;
+    }
+    @include small{
+      width: 100%;
+    }
   }
   .prive{
     font-size: 15px;
@@ -109,6 +162,18 @@
     padding: 5px;
     width: 90%;
     margin-bottom: 20px;
+
+    @include large{
+      width: 100%;
+    }
+    @include medium{
+      width: 100%;
+      font-size: 14px;
+    }
+    @include small{
+      width: 100%;
+      font-size: 13px;
+    }
   }
   .inframe{
   width: 70%;
@@ -120,6 +185,13 @@
     font-size: 45px;
     text-transform: capitalize;
     margin-bottom: 40px;
+
+    @include medium{
+      font-size: 40px;
+    }
+    @include small{
+      font-size: 35px;
+    }
   }
   }
  

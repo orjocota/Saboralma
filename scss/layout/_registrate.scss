@@ -24,6 +24,15 @@
     align-items: center;
     gap: 50px;
 
+    @include medium{
+      flex-direction: column;
+     gap: 20px;   
+    }
+    @include small{
+      flex-direction: column;
+     gap: 20px;   
+    }
+
     h3{
       color: $secundarybrowm;
       font-size: 22px;
@@ -51,4 +60,10 @@
     padding: 20px;
     border-radius: 20px;
     opacity: .8;
+    @include large{
+      width: 70%;
+    }
+    @include small{
+      width: 90%;
+    }
   }
