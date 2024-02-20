@@ -136,7 +136,7 @@
   width: 80%;
   border: 2px solid $secundarybrowm;
   border-radius: 50px;
-  background-color: rgb(143, 142, 142);
+  background: linear-gradient(rgba(128, 128, 128, 0.913),rgba(0, 0, 0, 0.759));
 
   @include large {
     width: 90%;
@@ -167,6 +167,11 @@
     width: 70%;
     height: 180px;
     border-radius: 10px;
+    transition: .5s all ease;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.2);
+    }
   }
   button {
     background-color: $primarygreen;
@@ -207,9 +212,10 @@
 .container-rostro {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 40px;
   padding: 20px;
   width: 50%;
+
 
   @include large{
     grid-template-columns: repeat(2,1fr);
@@ -239,6 +245,11 @@
   background-color: $colorbackcard;
   border: 2px solid $secundarybrowm;
   border-radius: 20px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  &:hover{
+    transform: scale(1.1);
+  }
 
   img {
     width: 100%;

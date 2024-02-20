@@ -22,6 +22,18 @@ body {
   width: 97%;
   margin: 20px auto;
 }
+.navbar img {
+  animation: rotate 5s linear infinite;
+  cursor: pointer;
+}
+@keyframes rotate {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(-180deg);
+  }
+}
 .navbar .logo {
   width: 50px;
   height: 50px;
@@ -376,7 +388,7 @@ footer {
   width: 80%;
   border: 2px solid #7b6519;
   border-radius: 50px;
-  background-color: rgb(143, 142, 142);
+  background: linear-gradient(rgba(128, 128, 128, 0.913), rgba(0, 0, 0, 0.759));
 }
 @media screen and (max-width: 992px) {
   .container-grid {
@@ -413,6 +425,11 @@ footer {
   width: 70%;
   height: 180px;
   border-radius: 10px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+.art-receta img:hover {
+  transform: scale(1.2);
 }
 .art-receta button {
   background-color: #6eb744;
@@ -453,7 +470,7 @@ footer {
 .container-rostro {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 40px;
   padding: 20px;
   width: 50%;
 }
@@ -492,6 +509,11 @@ footer {
   background-color: #396f19;
   border: 2px solid #7b6519;
   border-radius: 20px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.card-caja:hover {
+  transform: scale(1.1);
 }
 .card-caja img {
   width: 100%;
@@ -543,7 +565,7 @@ footer {
   justify-content: center;
   width: 85%;
   margin: auto;
-  background-color: rgb(143, 142, 142);
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.908), rgba(0, 0, 0, 0.623));
   padding: 20px;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -725,8 +747,18 @@ footer {
   height: 250px;
   border-radius: 50%;
   margin-top: 35px;
+  animation: rotar 5s linear infinite;
+  filter: drop-shadow(0px 6px 21px rgba(23, 109, 1, 0.8901960784));
 }
 
+@keyframes rotar {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(-180deg);
+  }
+}
 form {
   width: 50%;
   padding: 35px auto;
