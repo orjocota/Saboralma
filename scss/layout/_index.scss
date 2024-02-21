@@ -25,7 +25,7 @@
     font-size: 15px;
     text-transform: uppercase;
   }
-  h2 {
+  h1,h2 {
     font-size: 50px;
     font-weight: 900;
     text-transform: capitalize;
@@ -157,7 +157,7 @@
   flex-direction: column;
   width: 100%;
   gap: 50px;
-  h2 {
+  h4 {
     color: $secundarybrowm;
     font-size: 25px;
     font-weight: 900;
@@ -201,7 +201,7 @@
   align-items: center;
   flex-direction: column;
 }
-.titulo-rostros h3{
+.titulo-rostros h2{
   color: $secundarybrowm;
   font-weight: 900;
   text-transform: uppercase;
