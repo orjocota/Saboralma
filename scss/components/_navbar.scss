@@ -5,16 +5,19 @@
   border-radius: 15px;
   width: 97%;
   margin: 20px auto;
+  @include small{
+    height: 150px;
+  }
 
-  img{
+  img {
     animation: rotate 5s linear infinite;
     cursor: pointer;
   }
   @keyframes rotate {
-    from{
+    from {
       transform: rotateY(180deg);
     }
-    to{
+    to {
       transform: rotateY(-180deg);
     }
   }
@@ -59,12 +62,12 @@
   margin-right: 16px;
   transition: 0.5s color;
 
-  @include extralarge{
+  @include extralarge {
     font-size: 15px;
     margin-right: 0;
   }
 
-  &:hover{
+  &:hover {
     color: white;
   }
 }
@@ -86,4 +89,9 @@
 }
 .hover-a:hover {
   color: whitesmoke;
+}
+.container-fluid{
+  @include small{
+    flex-direction: column;
+  }
 }
