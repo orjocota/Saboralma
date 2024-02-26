@@ -3,6 +3,9 @@
     margin-top: 150px;
     margin-bottom: 30px;
     width: 100%;
+    @include small{
+      margin-top: 220px;
+    }
   }
   .container_contactos{
     background-image: url(../image/Background-contactos.jpg);
@@ -26,6 +29,7 @@
     }
     @include small{
       flex-direction: column;
+      width: 100%;
     }
   }
   .caja_p_logo{
@@ -68,6 +72,11 @@
       margin-top: 35px;
       animation: rotar 5s linear infinite;
       filter: drop-shadow(0px 6px 21px #176d01e3);
+
+      @include small{
+        width: 220px;
+        height: 230px;
+      }
     }
   }
   @keyframes rotar{

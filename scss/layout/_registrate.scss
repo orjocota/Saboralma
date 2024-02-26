@@ -3,6 +3,10 @@
     margin-top: 150px;
     margin-bottom: 30px;
     width: 100%;
+
+    @include small{
+      margin-top: 220px;
+    }
   }
   .container-registro{
     background-image: url(../image/Registro.jpg);
@@ -17,6 +21,10 @@
     padding: 20px;
     border-radius: 20px;
     margin:auto;
+
+    @include small{
+      width: 100%;
+    }
   }
   .btn-registro{
     display: flex;
@@ -63,7 +71,10 @@
     @include large{
       width: 70%;
     }
+    @include medium{
+      width: 100%;
+    }
     @include small{
-      width: 90%;
+      width: 100%;
     }
   }

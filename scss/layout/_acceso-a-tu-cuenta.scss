@@ -3,6 +3,10 @@
     margin-top: 150px;
     margin-bottom: 30px;
     width: 100%;
+
+    @include small{
+      margin-top: 220px;
+    }
   }
   .container-login{
     background-image: url(../image/Login.jpg);
@@ -19,6 +23,16 @@
     padding: 20px;
     border-radius: 20px;
     margin:auto;
+
+    @include small{
+      width: 100%;
+    }
+    @include medium{
+      width: 90%;
+    }
+    @include large{
+      width: 70%;
+    }
 
     h1{
       color: white;

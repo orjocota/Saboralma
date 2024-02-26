@@ -3,7 +3,11 @@
     margin-top: 150px;
     margin-bottom: 100px;
     width: 100%;
+    @include small{
+      margin-top: 200px;
+    }
   }
+
   .caja_art_somos{
     display: flex;
     flex-direction: column;
@@ -14,6 +18,10 @@
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 20px;
+    @include small{
+      width: 100%;
+      padding: 0;
+    }
 
     h2{
       color: $secundarybrowm;
@@ -50,7 +58,7 @@
       border: 2px solid whitesmoke;
 
       @include large{
-        width: 80%;
+        width: 100%;
         margin: auto;
       }
     }

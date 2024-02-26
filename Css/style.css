@@ -274,6 +274,11 @@ footer {
     margin: 220px auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .container_carrusel {
+    width: 100%;
+  }
+}
 
 .carousel-caption {
   display: flex;
@@ -346,6 +351,16 @@ footer {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  .container_sabias .container-sabias {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container_sabias .container-sabias {
+    width: 100%;
+  }
+}
 .container_sabias .container-sabias .art-sabias {
   display: flex;
   justify-content: center;
@@ -386,6 +401,12 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .container_grid {
+    width: 90%;
+    margin: 50px auto 50px auto;
+  }
 }
 
 .titulo-receta h3 {
@@ -434,6 +455,12 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  .container-grid {
+    width: 90%;
+    margin: 50px auto 50px auto;
+  }
+}
 @media screen and (max-width: 576px) {
   .container-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -456,7 +483,7 @@ footer {
   text-transform: uppercase;
 }
 .art-receta img {
-  width: 95%;
+  width: 80%;
   height: 180px;
   border-radius: 10px;
   transition: 0.5s all ease;
@@ -507,6 +534,7 @@ footer {
   gap: 40px;
   padding: 20px;
   width: 50%;
+  justify-items: center;
 }
 @media screen and (max-width: 992px) {
   .container-rostro {
@@ -518,6 +546,7 @@ footer {
   .container-rostro {
     grid-template-columns: repeat(1, 1fr);
     width: 80%;
+    justify-items: center;
   }
 }
 @media screen and (max-width: 576px) {
@@ -597,6 +626,11 @@ footer {
   margin-bottom: 100px;
   width: 100%;
 }
+@media screen and (max-width: 576px) {
+  .container_caja_somos {
+    margin-top: 200px;
+  }
+}
 
 .caja_art_somos {
   display: flex;
@@ -608,6 +642,12 @@ footer {
   padding: 20px;
   border-radius: 20px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .caja_art_somos {
+    width: 100%;
+    padding: 0;
+  }
 }
 .caja_art_somos h2 {
   color: #7b6519;
@@ -646,7 +686,7 @@ footer {
 }
 @media screen and (max-width: 992px) {
   .caja_somos img {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 }
@@ -664,6 +704,12 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  justify-items: center;
+}
+@media screen and (max-width: 576px) {
+  .container_productos {
+    margin-top: 220px;
+  }
 }
 .container_productos h1 {
   color: #7b6519;
@@ -678,6 +724,7 @@ footer {
   padding: 20px;
   width: 75%;
   margin-top: 30px;
+  justify-items: center;
 }
 @media screen and (max-width: 1200px) {
   .container-product {
@@ -694,12 +741,13 @@ footer {
 @media screen and (max-width: 768px) {
   .container-product {
     grid-template-columns: repeat(1, 1fr);
-    width: 70%;
+    width: 80%;
+    justify-items: center;
   }
 }
 @media screen and (max-width: 576px) {
   .container-product {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -714,6 +762,11 @@ footer {
   margin-top: 150px;
   margin-bottom: 30px;
   width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .container-contactos {
+    margin-top: 220px;
+  }
 }
 
 .container_contactos {
@@ -743,6 +796,7 @@ footer {
 @media screen and (max-width: 576px) {
   .container_contactos {
     flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -788,6 +842,12 @@ footer {
   margin-top: 35px;
   animation: rotar 5s linear infinite;
   filter: drop-shadow(0px 6px 21px rgba(23, 109, 1, 0.8901960784));
+}
+@media screen and (max-width: 576px) {
+  .caja_p_logo img {
+    width: 220px;
+    height: 230px;
+  }
 }
 
 @keyframes rotar {
@@ -950,6 +1010,11 @@ form button a {
   margin-bottom: 30px;
   width: 100%;
 }
+@media screen and (max-width: 576px) {
+  .container_registro {
+    margin-top: 220px;
+  }
+}
 
 .container-registro {
   background-image: url(../image/Registro.jpg);
@@ -964,6 +1029,11 @@ form button a {
   padding: 20px;
   border-radius: 20px;
   margin: auto;
+}
+@media screen and (max-width: 576px) {
+  .container-registro {
+    width: 100%;
+  }
 }
 
 .btn-registro {
@@ -1015,9 +1085,14 @@ form button a {
     width: 70%;
   }
 }
+@media screen and (max-width: 768px) {
+  .caja_form {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 576px) {
   .caja_form {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -1026,6 +1101,11 @@ form button a {
   margin-top: 150px;
   margin-bottom: 30px;
   width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .container_login {
+    margin-top: 220px;
+  }
 }
 
 .container-login {
@@ -1043,6 +1123,21 @@ form button a {
   padding: 20px;
   border-radius: 20px;
   margin: auto;
+}
+@media screen and (max-width: 576px) {
+  .container-login {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-login {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container-login {
+    width: 70%;
+  }
 }
 .container-login h1 {
   color: white;

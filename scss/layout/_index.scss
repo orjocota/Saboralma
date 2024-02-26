@@ -15,6 +15,10 @@
     width: 100%;
     margin: 220px auto;
   }
+  @include medium{
+    width: 100%;
+  }
+
 }
 .carousel-caption {
   display: flex;
@@ -79,6 +83,12 @@
     @include small{
       width: 100%;
     }
+    @include medium{
+      width: 100%;
+    }
+    @include large{
+      width: 100%;
+    }
 
     .art-sabias {
       display: flex;
@@ -120,6 +130,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @include medium{
+    width: 90%;
+    margin: 50px auto 50px auto;
+  }
 }
 .titulo-receta h3 {
   color: $secundarybrowm;
@@ -158,6 +173,10 @@
   
   @include medium {
     grid-template-columns: repeat(1,1fr);
+    @include medium{
+      width: 90%;
+      margin: 50px auto 50px auto;
+    }
   }
   @include small {
     grid-template-columns: repeat(1,1fr);
@@ -178,7 +197,7 @@
     text-transform: uppercase;
   }
   img {
-    width: 95%;
+    width: 80%;
     height: 180px;
     border-radius: 10px;
     transition: .5s all ease;
@@ -214,6 +233,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 .titulo-rostros h2{
   color: $secundarybrowm;
@@ -229,6 +249,7 @@
   gap: 40px;
   padding: 20px;
   width: 50%;
+  justify-items: center;
 
 
   @include large{
@@ -238,6 +259,7 @@
   @include medium{
     grid-template-columns: repeat(1,1fr);
     width: 80%;
+    justify-items: center;
   }
   @include small {
     grid-template-columns: repeat(1,1fr);
