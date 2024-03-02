@@ -30,7 +30,7 @@
   a {
     color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
   }
   h1,h2 {
@@ -43,7 +43,7 @@
       font-size: 40px;
     }
     @include small {
-      font-size: 35px;
+      font-size: 25px;
     }
   }
   p {
@@ -79,7 +79,7 @@
   align-items: center;
 
   .container-sabias {
-    width: 70%;
+    width: 80%;
     @include small{
       width: 100%;
     }
@@ -106,7 +106,7 @@
         font-size: 40px;
         margin-top: 20px;
         @include small{
-          font-size: 30px;
+          font-size: 25px;
         }
       }
 
@@ -116,7 +116,7 @@
         text-align: justify;
 
         @include small{
-          font-size: 10;
+          font-size: 16px;
         }
       }
     }
@@ -125,15 +125,19 @@
 /*-----------------------------CREACION DE IMAGEN PUBLICIDAD PARA RECETAS----------*/
 .container_grid {
   width: 100%;
-  margin-top: 100px;
+  margin:100px auto 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-items: center;
   flex-direction: column;
 
   @include medium{
     width: 90%;
-    margin: 50px auto 50px auto;
+  }
+  @include small{
+    justify-items: center;
+    width: 95%;
   }
 }
 .titulo-receta h3 {
@@ -168,17 +172,14 @@
   background: linear-gradient(rgba(128, 128, 128, 0.913),rgba(0, 0, 0, 0.759));
 
   @include large {
-    width: 100%;
-  }
-  
+    width: 95%;
+  }  
   @include medium {
+    width: 85%;
     grid-template-columns: repeat(1,1fr);
-    @include medium{
-      width: 90%;
-      margin: 50px auto 50px auto;
-    }
   }
   @include small {
+    width: 80%;
     grid-template-columns: repeat(1,1fr);
   }
 }
@@ -195,6 +196,8 @@
     font-size: 25px;
     font-weight: 900;
     text-transform: uppercase;
+    padding-top: 10px;
+    margin: 0;
   }
   img {
     width: 80%;
@@ -242,13 +245,17 @@
   font-size: 40px;
   margin-bottom: 50px;
   border-bottom: 2px solid whitesmoke;
+
+  @include small {
+    font-size: 25px;
+  }
 }
 .container-rostro {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   padding: 20px;
-  width: 50%;
+  width: 60%;
   justify-items: center;
 
 
@@ -263,7 +270,7 @@
   }
   @include small {
     grid-template-columns: repeat(1,1fr);
-    width: 100%;
+    width: 80%;
   }
 }
 .card-img-top {
@@ -303,6 +310,10 @@
     width: 100%;
     text-transform: uppercase;
     font-weight: 900;
+
+    @include small{
+      font-size: 18px;
+    }
   }
 
   p {
@@ -311,6 +322,10 @@
     color: bisque;
     font-weight: 500;
     text-align: justify;
+
+    @include small{
+      font-size: 16px;
+    }
   }
 
   button {
@@ -323,7 +338,7 @@
     a {
       color: white;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 16px;
       text-transform: uppercase;
     }
 

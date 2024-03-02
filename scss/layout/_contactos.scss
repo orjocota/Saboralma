@@ -63,19 +63,27 @@
       font-weight: 900;
       text-align: justify;
       padding: 15px;
+
+      @include small{
+        font-size: 16px;
+      }
     }
 
     img{
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       margin-top: 35px;
       animation: rotar 5s linear infinite;
       filter: drop-shadow(0px 6px 21px #176d01e3);
 
       @include small{
-        width: 220px;
-        height: 230px;
+        width: 160px;
+        height: 160px;
+      }
+      @include medium{
+        width: 170px;
+        height: 170px;
       }
     }
   }
@@ -172,7 +180,7 @@
     }
   }
   .prive{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 900;
     text-transform: uppercase;
     color: $secundarybrowm;
@@ -188,11 +196,11 @@
     }
     @include medium{
       width: 100%;
-      font-size: 14px;
+      font-size: 16px;
     }
     @include small{
       width: 100%;
-      font-size: 13px;
+      font-size: 16px;
     }
   }
   .inframe{
@@ -210,7 +218,7 @@
       font-size: 40px;
     }
     @include small{
-      font-size: 35px;
+      font-size: 20px;
     }
   }
   }

@@ -67,12 +67,13 @@
     background-color: rgb(168, 163, 163);
     padding: 20px;
     border-radius: 20px;
+    width: 75%;
     opacity: .8;
     @include large{
-      width: 70%;
+      width: 80%;
     }
     @include medium{
-      width: 100%;
+      width: 90%;
     }
     @include small{
       width: 100%;

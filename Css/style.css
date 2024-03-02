@@ -10,12 +10,12 @@
 }
 
 body {
-  background-color: rgb(159, 154, 154);
+  background-color: rgb(105, 135, 106);
 }
 
 /*components*/
 .navbar {
-  background-color: #6eb744;
+  background-color: #69a73d;
   height: 60px;
   margin: 20px;
   border-radius: 15px;
@@ -53,7 +53,7 @@ body {
   transition: 0.5s color;
 }
 .navbar .offcanvas {
-  background-color: #6eb744;
+  background-color: #69a73d;
   margin: 20px;
   border-radius: 15px;
 }
@@ -77,6 +77,7 @@ body {
   font-size: 17px;
   margin-right: 16px;
   transition: 0.5s color;
+  padding: 5px;
 }
 @media screen and (max-width: 1200px) {
   .nav-link {
@@ -119,7 +120,7 @@ body {
 footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: #6eb744;
+  background-color: #69a73d;
   padding: 50px;
   width: 100%;
   border-top: 3px solid #7b6519;
@@ -127,11 +128,15 @@ footer {
 @media screen and (max-width: 992px) {
   footer {
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
   footer {
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
   }
 }
 @media screen and (max-width: 576px) {
@@ -221,12 +226,12 @@ footer {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .copy {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .copy {
     flex-direction: column;
   }
@@ -240,17 +245,22 @@ footer {
 }
 .copy h4 {
   color: whitesmoke;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 900;
   margin: 0;
 }
 .copy p {
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
   color: whitesmoke;
   font-weight: 900;
   margin: 0;
   text-transform: uppercase;
+}
+@media screen and (max-width: 576px) {
+  .copy p {
+    font-size: 10px;
+  }
 }
 
 /*layaout*/
@@ -290,7 +300,7 @@ footer {
 .carousel-caption a {
   color: white;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 .carousel-caption h1, .carousel-caption h2 {
@@ -306,7 +316,7 @@ footer {
 }
 @media screen and (max-width: 576px) {
   .carousel-caption h1, .carousel-caption h2 {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 .carousel-caption p {
@@ -325,7 +335,7 @@ footer {
   }
 }
 .carousel-caption button {
-  background-color: #6eb744;
+  background-color: #69a73d;
   padding: 5px 15px;
   border: 2px solid white;
   border-radius: 15px;
@@ -344,7 +354,7 @@ footer {
   align-items: center;
 }
 .container_sabias .container-sabias {
-  width: 70%;
+  width: 80%;
 }
 @media screen and (max-width: 576px) {
   .container_sabias .container-sabias {
@@ -379,7 +389,7 @@ footer {
 }
 @media screen and (max-width: 576px) {
   .container_sabias .container-sabias .art-sabias h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .container_sabias .container-sabias .art-sabias p {
@@ -389,23 +399,29 @@ footer {
 }
 @media screen and (max-width: 576px) {
   .container_sabias .container-sabias .art-sabias p {
-    font-size: 10;
+    font-size: 16px;
   }
 }
 
 /*-----------------------------CREACION DE IMAGEN PUBLICIDAD PARA RECETAS----------*/
 .container_grid {
   width: 100%;
-  margin-top: 100px;
+  margin: 100px auto 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-items: center;
   flex-direction: column;
 }
 @media screen and (max-width: 768px) {
   .container_grid {
     width: 90%;
-    margin: 50px auto 50px auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container_grid {
+    justify-items: center;
+    width: 95%;
   }
 }
 
@@ -447,22 +463,18 @@ footer {
 }
 @media screen and (max-width: 992px) {
   .container-grid {
-    width: 100%;
+    width: 95%;
   }
 }
 @media screen and (max-width: 768px) {
   .container-grid {
+    width: 85%;
     grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media screen and (max-width: 768px) and (max-width: 768px) {
-  .container-grid {
-    width: 90%;
-    margin: 50px auto 50px auto;
   }
 }
 @media screen and (max-width: 576px) {
   .container-grid {
+    width: 80%;
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -481,6 +493,8 @@ footer {
   font-size: 25px;
   font-weight: 900;
   text-transform: uppercase;
+  padding-top: 10px;
+  margin: 0;
 }
 .art-receta img {
   width: 80%;
@@ -493,7 +507,7 @@ footer {
   transform: scale(1.2);
 }
 .art-receta button {
-  background-color: #6eb744;
+  background-color: #69a73d;
   padding: 5px 15px;
   border: 2px solid white;
   border-radius: 15px;
@@ -527,13 +541,18 @@ footer {
   margin-bottom: 50px;
   border-bottom: 2px solid whitesmoke;
 }
+@media screen and (max-width: 576px) {
+  .titulo-rostros h2 {
+    font-size: 25px;
+  }
+}
 
 .container-rostro {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   padding: 20px;
-  width: 50%;
+  width: 60%;
   justify-items: center;
 }
 @media screen and (max-width: 992px) {
@@ -552,7 +571,7 @@ footer {
 @media screen and (max-width: 576px) {
   .container-rostro {
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -595,12 +614,22 @@ footer {
   text-transform: uppercase;
   font-weight: 900;
 }
+@media screen and (max-width: 576px) {
+  .card-caja h5 {
+    font-size: 18px;
+  }
+}
 .card-caja p {
   font-size: 18px;
   text-align: justify;
   color: bisque;
   font-weight: 500;
   text-align: justify;
+}
+@media screen and (max-width: 576px) {
+  .card-caja p {
+    font-size: 16px;
+  }
 }
 .card-caja button {
   background-color: #396f19;
@@ -612,12 +641,12 @@ footer {
 .card-caja button a {
   color: white;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 .card-caja button:hover {
   border: 2px solid white;
-  background-color: #6eb744;
+  background-color: #69a73d;
 }
 
 /*--------------------------------------------- MAIN PARA QUIENES SOMOS--------------------------*/
@@ -722,32 +751,32 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 20px;
-  width: 75%;
+  width: 80%;
   margin-top: 30px;
   justify-items: center;
 }
 @media screen and (max-width: 1200px) {
   .container-product {
     grid-template-columns: repeat(2, 1fr);
-    width: 70%;
+    width: 75%;
   }
 }
 @media screen and (max-width: 992px) {
   .container-product {
     grid-template-columns: repeat(2, 1fr);
-    width: 80%;
+    width: 85%;
   }
 }
 @media screen and (max-width: 768px) {
   .container-product {
     grid-template-columns: repeat(1, 1fr);
-    width: 80%;
+    width: 70%;
     justify-items: center;
   }
 }
 @media screen and (max-width: 576px) {
   .container-product {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -835,9 +864,14 @@ footer {
   text-align: justify;
   padding: 15px;
 }
+@media screen and (max-width: 576px) {
+  .caja_p_logo p {
+    font-size: 16px;
+  }
+}
 .caja_p_logo img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin-top: 35px;
   animation: rotar 5s linear infinite;
@@ -845,8 +879,14 @@ footer {
 }
 @media screen and (max-width: 576px) {
   .caja_p_logo img {
-    width: 220px;
-    height: 230px;
+    width: 160px;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .caja_p_logo img {
+    width: 170px;
+    height: 170px;
   }
 }
 
@@ -917,7 +957,7 @@ form button {
 }
 form button:hover {
   border: 2px solid white;
-  background-color: #6eb744;
+  background-color: #69a73d;
 }
 form button a {
   color: white;
@@ -953,7 +993,7 @@ form button a {
 }
 
 .prive {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 900;
   text-transform: uppercase;
   color: #7b6519;
@@ -972,13 +1012,13 @@ form button a {
 @media screen and (max-width: 768px) {
   .prive {
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 576px) {
   .prive {
     width: 100%;
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
@@ -1000,7 +1040,7 @@ form button a {
 }
 @media screen and (max-width: 576px) {
   .inframe h3 {
-    font-size: 35px;
+    font-size: 20px;
   }
 }
 
@@ -1066,7 +1106,7 @@ form button a {
   background-color: grey;
 }
 .btn-registro h3:hover {
-  background-color: #6eb744;
+  background-color: #69a73d;
 }
 .btn-registro a {
   text-decoration: none;
@@ -1078,16 +1118,17 @@ form button a {
   background-color: rgb(168, 163, 163);
   padding: 20px;
   border-radius: 20px;
+  width: 75%;
   opacity: 0.8;
 }
 @media screen and (max-width: 992px) {
   .caja_form {
-    width: 70%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 768px) {
   .caja_form {
-    width: 100%;
+    width: 90%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1098,6 +1139,9 @@ form button a {
 
 /*----------------------------------------------------MAIN DE LOGIN DE CUENTA-------------------------------------*/
 .container_login {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
   margin-top: 150px;
   margin-bottom: 30px;
   width: 100%;
@@ -1117,17 +1161,11 @@ form button a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 35%;
+  width: 60%;
   height: 500px;
   gap: 50px;
   padding: 20px;
   border-radius: 20px;
-  margin: auto;
-}
-@media screen and (max-width: 576px) {
-  .container-login {
-    width: 100%;
-  }
 }
 @media screen and (max-width: 768px) {
   .container-login {
@@ -1136,7 +1174,7 @@ form button a {
 }
 @media screen and (max-width: 992px) {
   .container-login {
-    width: 70%;
+    width: 50%;
   }
 }
 .container-login h1 {
@@ -1145,6 +1183,11 @@ form button a {
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
+}
+@media screen and (max-width: 576px) {
+  .container-login h1 {
+    font-size: 20px;
+  }
 }
 
 .form-label-login {

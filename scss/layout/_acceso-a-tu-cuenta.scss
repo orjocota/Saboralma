@@ -1,5 +1,8 @@
 /*----------------------------------------------------MAIN DE LOGIN DE CUENTA-------------------------------------*/
 .container_login{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
     margin-top: 150px;
     margin-bottom: 30px;
     width: 100%;
@@ -17,21 +20,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 35%;
+    width: 60%;
     height: 500px;
     gap: 50px;
     padding: 20px;
     border-radius: 20px;
-    margin:auto;
 
-    @include small{
-      width: 100%;
-    }
     @include medium{
       width: 90%;
     }
     @include large{
-      width: 70%;
+      width: 50%;
     }
 
     h1{
@@ -40,6 +39,9 @@
       font-weight: 900;
       text-align: center;
       text-transform: uppercase;
+      @include small{
+        font-size: 20px;
+      }
     }
   }
   .form-label-login{
